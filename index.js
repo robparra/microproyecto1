@@ -33,3 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     carrusel(hero);
 })
+
+let Canvas = document.getElementById("MiGrafica").getContext("2d");
+
+var chart = new Chart(Canvas, {
+    type: "bar",
+    data:{
+        labels:["HTML", "CSS", "REACT" , "NODE" , "PHP", ],
+        datasets:[
+            {
+                label:"Grafica de habilidades",
+                backgroundColor:"rgb(0,0,0)",
+                borderColor:"rgb(0, 255, 0)",
+                data:[100, 80, 75, 70, 90, 0 ]
+            }
+        ]
+
+
+    }
+})
