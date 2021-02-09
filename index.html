@@ -9,18 +9,18 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="" alt="logo">
+        <a href="#section0"><h7>MICROPROYECTO</h7></a>
        <nav>
           <ul class="nav__links"> 
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#section1">Experience</a></li>
+            <li><a href="#section2">About Me</a></li>
+            <li><a href="#section3">Skills</a></li>
           </ul>  
         </nav> 
-        <a href="#" class="cta"><button>Contact</button></a>
+        <a href="#section4" class="cta"><button>Contact</button></a>
     </header>
 
-    <div class="hero">
+    <div class="hero" id="section0">
         <div class="atras boton">
             &#60
         </div>
@@ -30,15 +30,15 @@
         <img id="imagen" alt="" src="img/img1.jpg">
     </div>
 
-    <div class="experience">
+    <div class="experience" id="section1">
         <h1>Experiencia Laboral</h1>
         <div class="papagayo">
             <h4>Papagayo.shop</h4>
+            <a href="https://papagayo.shop/"><img src="img/papagayo.png" alt=""></a>
             <ul class="papa">
                 <li>Encargado de la parte tecnologica de la empresa</li>
                 <li>Creador, en gran parte, de la pagina web de la empresa</li>
             </ul>
-            
         </div>
         <div class="MiptoTech">
             <h4>MiptoTech</h4>
@@ -46,27 +46,27 @@
                 <li>Encargado de la parte tecnologica de la empresa</li>
                 <li>Creador, en gran parte, de la pagina web de la empresa</li>
             </ul>
-            
         </div>
         <div class="shareity">
             <h4>Shareity</h4>
+            <a href="https://shareity.com/"><img src="img/shareity.jpg" alt=""></a>
             <ul class="sha">
                 <li>Programador en las diferentes paginas de la empresa,
                      enfocado mas en el dashboard con el tema de paneles administrativos</li>
             </ul>
-
         </div>
         <div class="ozone">
             <h4>OzoneUniverse</h4>
+            <a href="https://ozoneuniverse.com/"><img  src="img/ozone.png" alt="" ></a>
             <ul class="oz">
                 <li>Programador en Ozone Web</li>
             </ul>
-
         </div>
     </div>
 
-    <div class="about">
-        <img src="img/img1.jpg" alt="">
+    <div class="about" id="section2">
+        <h1>Sobre Mi</h1>
+        <img src="img/yo.jpg" alt="">
         <div class="yo">
             <ul class="yo">
                 <li>Robert Parra </li> 
@@ -78,12 +78,35 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="section3">
         <h1>Habilidades</h1>
         <canvas id="MiGrafica" width="100%" ></canvas>
+    </div>
 
+    <div class="contact" id="section4">
+        <h1>Contact</h1>
+        <div class="container">
+            <form action="">
+              <label for="fname">Primer Nombre</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Apellido</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email.." required>
+          
+              <label for="subject">Mensaje</label>
+              <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit" onclick="getData()">
+            </form>
+          </div>
     </div>
     
     <script src="/index.js"></script>
+
+    
 </body>
+<footer>Hola :)</footer>
 </html>
