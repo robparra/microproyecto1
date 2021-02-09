@@ -39,6 +39,32 @@ header{
     background-color: indigo;
 }
 
+.yo{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border: 2px solid #5878ca;
+}
+
+.yo li{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border: 2px solid #5878ca;
+}
+
 .papa li{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #ffffff; 
