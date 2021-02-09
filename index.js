@@ -43,7 +43,7 @@ var chart = new Chart(Canvas, {
         datasets:[
             {
                 label:"Grafica de habilidades",
-                backgroundColor:"rgb(0,0,0)",
+                backgroundColor:"#21bf47",
                 borderColor:"rgb(0, 255, 0)",
                 data:[100, 80, 75, 70, 90, 0 ]
             }
@@ -52,3 +52,11 @@ var chart = new Chart(Canvas, {
 
     }
 })
+
+var getData = function(){
+    var name = document.getElementById("name").value;
+    var lname = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    console.log(name+" "+lname+" "+email)
+    alert("Mensaje enviado")
+}
