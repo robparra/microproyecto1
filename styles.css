@@ -12,6 +12,10 @@ h1, h4{
     font-family: inherit;
 }
 
+h3{
+    color: black;
+}
+
 h7{
     font-size: xx-large;
     color: black;
@@ -53,6 +57,8 @@ footer{
     align-items: center;
     padding: 30px 10%;
     background-color: indigo;
+    position: absolute;
+    width: 100%;
 }
 
 .nav__links{
@@ -204,7 +210,7 @@ button:hover{
 .hero{
     width: 100%;
     position: relative;
-    height: 780px;
+    height: 881px;
 }
 
 .boton{
@@ -226,12 +232,12 @@ button:hover{
 
 .atras{
     left: 2%;
-    top: calc(121% - 82%);
+    top: calc(80% - 27%);
 }
 
 .adelante{
     right: 2%;
-    top: calc(121% - 82%);
+    top: calc(80% - 27%);
 }
 
 input[type=text], select, textarea {
@@ -265,8 +271,89 @@ input[type=text], select, textarea {
   }
 
   .skills{
-      border: 23px solid;
+      margin: 60px auto;
+      width: 100%;
   }
+
+  .skills li {
+      margin: 20px;
+      background: white;
+  }
+
+  .bar{
+      background: #353b48;
+      display: block;
+      height: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7b3;
+  }
+
+  .bar span{
+      height: 10px;
+      float: left;
+      background: #2187e7;
+  }
+
+  .html{
+      width: 90%;
+      animation: html 2s;
+  }
+
+  .css{
+      width: 65%;
+      animation: css 2s;
+  }
+
+  .js{
+      width: 50%;
+      animation: js 2s;
+  }
+
+  .rc{
+      width: 70%;
+      animation: rc 2s;
+  }
+
+  @keyframes html{
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 90%;
+      }
+  }
+
+  @keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes rc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+  
+    
 
   .about{
     border: 23px solid;
@@ -279,3 +366,4 @@ input[type=text], select, textarea {
 .contact{
     border: 23px solid;
 }
+

@@ -34,24 +34,36 @@ document.addEventListener("DOMContentLoaded", () => {
     carrusel(hero);
 })
 
-let Canvas = document.getElementById("MiGrafica").getContext("2d");
+// let Canvas = document.getElementById("MiGrafica").getContext("2d");
 
-var chart = new Chart(Canvas, {
-    type: "bar",
-    data:{
-        labels:["HTML", "CSS", "REACT" , "NODE" , "PHP", ],
-        datasets:[
-            {
-                label:"Grafica de habilidades",
-                backgroundColor:"#21bf47",
-                borderColor:"rgb(0, 255, 0)",
-                data:[100, 80, 75, 70, 90, 0 ]
-            }
-        ]
+// var chart = new Chart(Canvas, {
+//     type: "bar",
+//     data:{
+//         labels:["HTML", "CSS", "REACT" , "NODE" , "PHP", ],
+//         datasets:[
+//             {
+//                 label:"Grafica de habilidades",
+//                 backgroundColor:"#21bf47",
+//                 borderColor:"rgb(0, 255, 0)",
+//                 data:[100, 80, 75, 70, 90, 0 ]
+//             }
+//         ]
 
 
+//     }
+// })
+
+const numb = document.querySelector(".numb");
+let counter = 0;
+setInterval(()=>{
+    if (counter == 100) {
+        clearInterval();
+        
+    }else{
+        counter+=1;
+        numb.textContent = counter + "%";
     }
-})
+}, 80);
 
 var getData = function(){
     var name = document.getElementById("name").value;
