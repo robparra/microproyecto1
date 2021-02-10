@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-var getData = function(){
+var getData= function(){
     var name = document.getElementById("name").value;
     var lname = document.getElementById("lname").value;
     var email = document.getElementById("email").value;
